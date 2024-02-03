@@ -272,7 +272,7 @@
                 blocks.forEach(block => {
                     const blockTop = block.getBoundingClientRect().top;
                     const screenHeight = window.innerHeight;
-                    if (blockTop < screenHeight) {
+                    if (blockTop < screenHeight/1.8) {
                         block.style.opacity = '1';
                         block.style.transform = 'translateX(0)';
       }
